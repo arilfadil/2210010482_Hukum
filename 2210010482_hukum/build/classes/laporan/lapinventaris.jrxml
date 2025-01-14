@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="357fcd42-b61c-47c1-ab07-7f53e7c8ac63">
+	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from inventaris]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Barang_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Karyawan_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Status_inventaris" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Waktu_penyerahan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal_keluar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="211" y="23" width="161" height="36" uuid="dc8f70c5-08ac-4948-8f7b-d80e46addc6d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Inventaris]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="59" height="20" uuid="24ae6011-967d-4103-86e9-06da8aafca34"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="0" width="79" height="20" uuid="ad18096a-2e2c-4018-a5c3-25e05f78a654"/>
+				<text><![CDATA[Barang_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="79" height="20" uuid="69054b79-e404-4b54-9767-b1f835b4dc78"/>
+				<text><![CDATA[Karyawan_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="0" width="79" height="20" uuid="ed5d7807-4e14-4b8d-8bc3-0efd8a72ca25"/>
+				<text><![CDATA[Status_inventaris]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="0" width="79" height="20" uuid="03d36862-d2ba-4cf8-88d7-02443343012f"/>
+				<text><![CDATA[Waktu_penyerahan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="0" width="79" height="20" uuid="8e2103a1-8dc3-41cf-a611-8b7a6fd1927a"/>
+				<text><![CDATA[keterangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="0" width="79" height="20" uuid="0b1143a5-b0ef-4442-9f60-228208f52413"/>
+				<text><![CDATA[Tanggal_keluar]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="59" height="20" uuid="fa96a797-3c48-4580-bff3-9e43718806b4"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="59" y="0" width="79" height="20" uuid="775b6a4b-d699-4408-bf9a-fe6fd9ae3048"/>
+				<textFieldExpression><![CDATA[$F{Barang_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="79" height="20" uuid="1115509d-c180-4d92-a2d0-c2658c6a7249"/>
+				<textFieldExpression><![CDATA[$F{Karyawan_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="0" width="79" height="20" uuid="baea331b-6d04-4413-8964-db66d7c3608d"/>
+				<textFieldExpression><![CDATA[$F{Status_inventaris}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="0" width="79" height="20" uuid="1c6da1c7-05a1-450b-a308-4b1396263a71"/>
+				<textFieldExpression><![CDATA[$F{Waktu_penyerahan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="0" width="79" height="20" uuid="26c08c80-f8de-4f84-a2d5-7e866f8fa597"/>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="0" width="79" height="20" uuid="1a4a875f-91c3-4d6e-80bb-447847869e12"/>
+				<textFieldExpression><![CDATA[$F{Tanggal_keluar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
